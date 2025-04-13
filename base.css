@@ -25,7 +25,14 @@ body {
 }
 .header {
     background-color: rgb(5, 108, 108);
-    min-height: 150px;
+    max-width: 250px;
+    overflow: hidden;
+}
+.header img {
+    width: 100%;
+    height: auto;
+    
+    display: block;   
 }
 .content {
     background-color: white;
