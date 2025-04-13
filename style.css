@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(148, 238, 250);
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 14vw;
+    background: linear-gradient(to bottom, #c5e07b, #23c038);
+    padding: 32px;
+    border-radius: 12px;
+    margin: 8px;
+}
+.logo_clinica {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    min-height: 150px;
+} 
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color: rgb(221, 228, 223);
+    min-height: 150px;
+}
+.social_media {
+    display: flex;
+}
+.social_media ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+.social_media ul li {
+    padding: 0;
+    margin: 16px;
+}
+
