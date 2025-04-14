@@ -1,8 +1,10 @@
 html, body {
     margin: 0;
+    font-family: Arial, sans-serif;
 }
+
 body {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
 }
@@ -11,49 +13,346 @@ body {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: rgb(148, 238, 250);
+    background-color: rgb(253, 255, 255);
 }
+
 .main {
     display: flex;
     flex-flow: column;
     width: 85%;
 }
+
 .menu {
     width: 14vw;
-    background: linear-gradient(to bottom, #c5e07b, #23c038);
+    background: linear-gradient(to bottom, #e3ebcf, #ddddd0);
     padding: 32px;
     border-radius: 12px;
     margin: 8px;
 }
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #14592f;
+}
+
 .logo_clinica {
     display: block;
     margin: 0 auto;
     width: 150px;
 }
-.header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
-} 
-.content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
-}
-.footer {
-    background-color: rgb(221, 228, 223);
-    min-height: 150px;
-}
-.social_media {
-    display: flex;
-}
-.social_media ul {
-    display: flex;
-    flex-direction: row;
+
+ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
-.social_media ul li {
-    padding: 0;
-    margin: 16px;
+
+.header {
+    background-color: rgb(5, 108, 108);
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    background-color: rgb(238, 198, 198);
+    min-height: 170px;
+    padding: 20px;
+}
+
+.content_horario {
+    background-color: rgb(236, 238, 222);
+    padding: 20px;
+}
+
+.content_horario h1 {
+    color: #2c3e50;
+}
+
+.especialidades {
+    background-color: rgb(236, 238, 222);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.especialidades h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.especialista {
+    margin-bottom: 15px;
+}
+
+.especialista h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #0d4c75;
+}
+
+.especialista p {
+    margin: 5px 0 10px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.especialidades_h3 {
+    color: #2c3e50;
+}
+
+table {
+    border: solid 1px black;
+    /*border-radius: 15px;*/
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead th {
+    background-color: #e6c4e0;
+    /*border-radius: 15px 15px 0 0;*/
+    padding: 10px;
+    text-align: left;
+}
+
+table tbody tr {
+    border-radius: 15px;
+}
+
+table tr:nth-child(even) {
+    background-color: #e6c4e0;
+}
+
+table tr:hover td {
+    background-color: #e49a9a;
+    cursor: pointer;
+}
+
+.botao-consulta {
+    background-color: rgb(236, 238, 222);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #e99ca3;
+    color: rgb(12, 12, 12);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #dd5db2;
+}
+
+.rodape_horario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(236, 238, 222);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(238, 198, 198);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer a,
+.contato_info a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #14592f;
+}
+
+.contato_info {
+    flex: 1;
+}
+
+.title_end {
+    font-weight: 600;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social_media ul {
+    display: flex;
+    gap: 16px;
+}
+
+.contato_info a img {
+    width: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 32px auto;
+    background-color: rgb(238, 198, 198);
+    border-radius: 16px;
+    padding: 32px;
+    color: #0c0c0c;
+}
+
+.formulario h2 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.formulario p {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 16px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, textarea {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+#submit, #reset {
+    border-radius: 10px;
+    background-color: #da82b2;
+    color: #0f0909;
+    border: none;
+    font-family: Sora, sans-serif;
+    font-size: 14px;
+    padding: 10px 32px;
+}
+
+#submit:hover, #reset:hover {
+    background-color: #005f70;
+    color: #e2e2e2;
+    transition: 0.3s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4c2c2;
+}
+
+.contato_zap,
+.contato_info,
+.contato_mapa {
+    flex: 1;
+    min-width: 250px;
+}
+
+.whatsapp_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color: #f3e7ef;
+    color: #111111;
+    border-radius: 16px;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp_button:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.contato_mapa iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.botao {
+    margin-top: 32px;
+    padding: 10px 20px;
+    background-color: #f3e7ef;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 12px;
+}
