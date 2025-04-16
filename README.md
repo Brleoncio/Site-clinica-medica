@@ -15,21 +15,25 @@ CSS3 (estilo fornecido pelo curso + ajustes pessoais)
 📁 Estrutura do Projeto
 clinica-medica/
 
-├── index.html
+├── index.html  
 ├── sobre.html   
 ├── horario.html       
 └── contato.html  
 
 index.html
+
 Página inicial com apresentação da clínica e navegação para as demais seções.
 
 sobre.html
+
 Informações institucionais, missão, visão e valores da clínica.
 
 horario.html
+
 Quadro de horários de atendimento por especialidade ou por profissional.
 
 contato.html
+
 Formulário de contato e informações como telefone, e-mail e localização.
 
 ✅ Funcionalidades
